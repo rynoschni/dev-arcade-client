@@ -1,0 +1,234 @@
+@font-face {
+  src: url("./fonts/Minecraft.ttf");
+  font-family: minecraft;
+}
+@font-face {
+  font-family: tetfont;
+  src: url("./fonts/tetri.ttf");
+}
+
+/* App */
+.Tetris {
+
+  --col-side: calc(var(--tile-size) * 4);
+  --col-center: calc(var(--tile-size) * 10);
+  --grid-height: calc(var(--tile-size) * 18);
+
+  width: calc(var(--tile-size) * (4 + 1 + 10 + 1 + 4));
+  margin: auto;
+  display: grid;
+  margin-top: 60px;
+
+  grid-gap: var(--tile-size) var(--tile-size);
+  /* Defines three columns of `--col-side`, `--col-center`, and `--col-side` widths. */
+  grid-template-columns: var(--col-side) var(--col-center) var(--col-side);
+  /* Defines three rows of `100px`, `--grid-height`, and 100px. */
+  grid-template-rows: 100px var(--grid-height) 100px;
+
+/* This defines the areas on the grid with names: 'h', 'l', 'c', 'r',
+and 'b'. The '.' represents an empty cell on the grid. */
+  grid-template-areas: "h h h"
+                       "l c r"
+                       ". b .";
+}
+
+.tetris-header {
+  background-color: #3D144C;
+  min-height: 10vh;
+  grid-area: h;
+  display: flex;
+  border-radius: 5px;
+}
+
+.tetris-title {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  font-size: 60px;
+  color: #dd0b4a;
+  text-shadow: 3px 3px 10px #00b8b8;
+  font-family: tetfont;
+}
+
+.next-block {
+  display: grid;
+  grid-area: l;
+  grid-template-columns: repeat(4, var(--tile-size));
+  align-self: flex-start;
+}
+
+.grid-board {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), var(--tile-size));
+  grid-gap: 0;
+  align-self: flex-start;
+  grid-area: c; /* Assign to grid area c */
+}
+
+.score-board {
+  grid-area: r;
+}
+
+.controls {
+  grid-area: b;
+  display: flex;
+  flex-direction: row;
+}
+
+.control-button {
+  --size: calc(var(--tile-size) * 2.5);
+  width: var(--size);
+  height: var(--size);
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+  background-color: var(--color-0);
+  color: #FAEB2C;
+  text-shadow: 3px 3px 4px #dfd21e;
+  font-family: minecraft !important;
+}
+
+.message-popup {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: calc(var(--tile-size) * 10);
+  height: calc(var(--tile-size) * 10);
+  background-color: rgba(206, 151, 252, 0.342);
+  border-radius: 5px;
+  text-align: center;
+  font-family: minecraft !important;
+  
+}
+
+.message-popup.hidden {
+  display: none;
+}
+
+
+:root {
+  --bg-color: rgba(150, 150, 150, 1);
+
+  /* Border Colors are all transparent colors. These will tint or shade the background color of the square. */
+  --border-left-color: #3d144cd2;
+  --border-top-color: #621f7ad7;
+  --border-right-color: rgb(33, 2, 53);
+  --border-bottom-color: rgba(65, 5, 94, 0.5);
+
+  /* Square Colors:  background colors for the squares.*/
+  --color-0: #000000;
+  --color-1: #006bc2;
+  --color-2: #FF0099;
+  --color-3: #ffee00;
+  --color-4: #1DD73C;
+  --color-5: #FF5F1F;
+  --color-6: #00FFFF;
+  --color-7: #F51D00;
+
+
+  /* Numbers define values that will be used throughout the CSS.
+  --tile-size: 20px for example will set size of the grid squares. */
+  --cols: 10;
+  --rows: 18;
+  --tile-size: 20px;
+  --border-width: 5px;
+}
+
+/* Colors */
+.color-0 {
+  background-color: var(--color-0);
+}
+
+.color-1 {
+  background-color: var(--color-1);
+}
+
+.color-2 {
+  background-color: var(--color-2);
+}
+
+.color-3 {
+  background-color: var(--color-3);
+}
+
+.color-4 {
+  background-color: var(--color-4);
+}
+
+.color-5 {
+  background-color: var(--color-5);
+}
+
+.color-6 {
+  background-color: var(--color-6);
+}
+
+.color-7 {
+  background-color: var(--color-7);
+}
+
+/* Grid Square */
+.grid-square {
+  border-style: groove;
+  width: var(--tile-size);
+  height: var(--tile-size);
+  border-width: 3px;
+  border-left-color: var(--border-left-color);
+  border-top-color: var(--border-top-color);
+  border-right-color: var(--border-right-color);
+  border-bottom-color: var(--border-bottom-color);
+  box-sizing: border-box;
+}
+
+
+.grid-board {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), var(--tile-size));
+  grid-gap: 0;
+  align-self: flex-start;
+}
+
+
+/* Score Board */
+.score-board-button {
+  display: block;
+  padding: 1em;
+  border-radius: 5px;
+  background-color: var(--color-0);
+  color: #FAEB2C;
+  text-shadow: 3px 3px 4px #dfd21e;
+  font-family: minecraft !important;
+}
+
+.score-board {
+  font-family: minecraft !important;
+  text-align: left;
+  text-shadow: 1px 1px 2px #00b8b8;
+}
+
+.form {
+  font-family: minecraft !important;
+  padding-top: 70px;
+}
+
+.form-text {
+  font-family: minecraft !important;
+  font-size: 15px;
+  background-color: #00FFFF;
+  text-shadow: 1px 1px 2px #0000009c;
+  display: block;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.form-button {
+  font-family: minecraft !important;
+  background-color: var(--color-0);
+  color: #FAEB2C;
+  text-shadow: 3px 3px 4px #dfd21e;
+  display: block;
+  padding: 1em;
+  border-radius: 5px;
+  
+}

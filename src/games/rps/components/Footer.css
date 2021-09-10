@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+#footer .celi {
+    width: 65px;
+    height: 75px;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+
+
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+#footer .skyler {
+	width: 65px;
+    height: 65px;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+#footer .myr {
+	width: 65px;
+    height: 70px;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+#footer{
+	padding-top: 120px;
+	color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+	letter-spacing: 5px;
+}

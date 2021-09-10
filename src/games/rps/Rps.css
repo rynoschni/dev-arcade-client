@@ -1,0 +1,229 @@
+/* @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap'); */
+
+/* .rps_body {
+  background-color: #222;
+  color: #fff;
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 700;
+} */
+/* 
+.undo_text_align {
+  text-align: left;
+} */
+
+/* .container {
+  margin: auto;
+  width: 50%;
+} */
+/* .rps_h1 {
+  margin-left: 16%;
+  display: block;
+  position: relative;
+  font-size: 100px;
+  background: linear-gradient(
+    to bottom,
+    #00f2ff 0%,
+    #e2fbff 50%,
+    #0a343f 51%,
+    #0094f7 100%
+  );
+  background-blend-mode: multiply;
+  background-size: 10px 100px;
+  background-repeat: repeat;
+  line-height: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rps_h1::before {
+  background: none;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background-image: url("https://i.imgur.com/Ym9HCsT.gif");
+  background-blend-mode: screen;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.5;
+}
+
+.rps_h1::after {
+  background: none;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.5),
+    3px 1px 3px rgba(255, 0, 255, 0.85), -3px -2px 3px rgba(0, 0, 255, 0.85),
+    1px -2px 0 rgba(255, 255, 255, 0.8);
+  z-index: -2;
+} */ 
+
+/* #board {
+  display: none;
+  margin: auto;
+  width: 800px;
+  height: 550px;
+  border: 2px solid;
+  color: rgb(167, 105, 209);
+} */
+
+/* #instructions {
+  margin: 2%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 120px;
+} */
+
+/* #reset {
+  width: 100px;
+  align-items: center;
+  font-family: "DotGothic16", sans-serif;
+  background: #7c7c7c;
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: cyan;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.2rem;
+  margin: 1rem;
+  min-width: 200px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  width: auto;
+}
+#reset:focus,
+.btn:hover {
+  background: #153cb4;
+}
+#reset {
+  background: #94167f;
+}
+#reset:hover {
+  background: #e93479;
+} */
+
+
+/* #resetDiv {
+  display: flex;
+}
+#resetDiv {
+display: flex;
+  display: none;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+} */
+
+/* #score {
+  margin: auto;
+  margin-top: 8rem;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+	letter-spacing: 5px;
+  padding-bottom: 20px;
+
+} */
+
+
+
+/* #footer {
+  text-align: center;
+  margin: auto;
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #222;
+  background-color: #222;
+} */
+/* #footer img {
+  margin: 5px;
+  height: 5%;
+  width: 5%;
+  padding: 5px 5px 5px 5px;
+} */
+/* 
+#window {
+  margin: auto;
+  width: 785px;
+  height: 500px;
+  border: 2px solid rgb(158, 83, 201);
+}
+
+.actionBtn {
+  border: 2px solid rgb(158, 83, 201);
+  font-size: small;
+  padding: 1px;
+}
+
+#top {
+  padding: 1%;
+}
+
+#pickObject {
+  /* margin-top: 33%; */
+  /* position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid rgb(145, 102, 173);
+  height: 90px;
+}
+
+.action{
+
+  height: 70%;
+  height: 35%;
+ 
+} */ 
+
+
+h3{
+  color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+	letter-spacing: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+@import url('https://icons8.com/icon/nriB7d30z6Rq/barber-scissors');
+
+@import url('https://icons8.com/icon/77722/rock');
+
+@import url('https://icons8.com/icon/77781/paper');
+
+.icons {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.instructions{
+    font-family: "DotGothic16", sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    border: 3px solid black!important;
+    border-radius: 0;
+    box-shadow: 3px 3px black, 5px 5px white;
+    padding-right: 5%;
+    margin-top: 20px;
+}

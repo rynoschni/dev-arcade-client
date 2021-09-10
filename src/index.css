@@ -1,0 +1,30 @@
+body {
+  background: url("./components/Home/images/80s-grid.jpg") no-repeat fixed
+    center;
+  background-size: auto;
+  background-blend-mode:color-dodge;
+  background-color: #3d144c;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Score Board */
+.score-board-button {
+  display: block;
+  padding: 1em;
+  border-width: 5px;
+  border-top-color: var(--button-color-t);
+  border-left-color: var(--button-color-l);
+  border-right-color: var(--button-color-r);
+  border-bottom-color: var(--button-color-b);
+}

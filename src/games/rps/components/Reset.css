@@ -1,0 +1,36 @@
+
+#reset {
+    width: 100px;
+    align-items: center;
+    font-family: "DotGothic16", sans-serif;
+    background: #7c7c7c;
+    border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+    border-left: 6px inset rgba(0, 0, 0, 0.5);
+    border-right: 6px inset rgba(255, 255, 255, 0.5);
+    border-top: 6px inset rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    color: cyan;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.2rem;
+    margin: 1rem;
+    min-width: 200px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    width: auto;
+  }
+  #reset:focus,
+  .btn:hover {
+    background: #153cb4;
+  }
+  #reset {
+    background: #94167f;
+  }
+  #reset:hover {
+    background: #e93479;
+  }
+
+#resetDiv {
+    display: none;
+}
+
